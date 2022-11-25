@@ -1,0 +1,504 @@
+body {
+  width: 100%;
+  height: 100%;
+  background: whitesmoke;
+}
+
+header {
+  background: whitesmoke;
+}
+/* HOME PAGE */
+
+@media (max-width: 834px) {
+  body {
+    & .middle-section-top img {
+      display: none;
+    }
+  }
+  header {
+    width: 200px;
+    margin: 20px;
+  }
+}
+
+.container {
+  display: flex;
+}
+
+/* ------------------------------------------- */
+/* Header på alla sidor ------------------------ */
+
+.header-navbar {
+  margin-top: 200px;
+  padding: 5px;
+
+  & .header-navbar-list {
+    display: inline-block;
+    margin: 0 50px;
+    font-size: 20px;
+    color: #fff;
+    & li,
+    a {
+      text-decoration: none;
+      transition: color 0.5s;
+      color: rgb(113, 109, 109);
+      width: 150px;
+      list-style: none;
+      text-decoration: none;
+    }
+
+    & li,
+    a:hover {
+      transition: 0.2s;
+      color: rgb(28, 25, 25);
+    }
+
+    .active-navbar li > a {
+      border-bottom: 1px solid black;
+      font-size: 25px;
+      color: black !important;
+    }
+  }
+}
+
+/* ------------------------------------------- */
+/* HOME SIDAN, RUBRIK + IMG ---------------- */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.middle-section-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .middle-section-top-text {
+    font-size: 20px;
+    width: 100%;
+
+    & em,
+    h1 {
+      color: rgb(113, 109, 109);
+      font-size: 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    & h2 {
+      color: rgb(206, 94, 94);
+      font-size: 200px;
+      margin-top: 50px;
+      margin-bottom: 0px;
+    }
+
+    & p {
+      color: rgb(116, 116, 116);
+      font-style: italic;
+      font-size: 20px;
+      margin-top: 0px;
+    }
+  }
+  & img {
+    opacity: 99%;
+    border-radius: 10px;
+    height: 70vh;
+    width: 100%;
+  }
+
+  & .middle-section-produktinfo {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px;
+    border-bottom-color: rgb(116, 116, 116);
+    border-bottom-style: solid;
+    border-top: 1px;
+    border-top-color: rgb(116, 116, 116);
+    border-top-style: solid;
+    & .produkt-info {
+      display: flex;
+      justify-content: space-between;
+      & .produkt-info-hide {
+        color: black;
+      }
+    }
+  }
+
+  & p {
+    color: rgb(116, 116, 116);
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  & button {
+    background-color: rgb(206, 94, 94);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  & button:hover {
+    color: black;
+  }
+}
+
+/* ------------------------------------------- */
+/* MIDDLE CONTENT EVENT. HOME & PRODUKT SIDAN----------*/
+.middle-content-event-1 {
+  display: flex;
+  flex-wrap: wrap;
+
+  & .nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 33.33%;
+
+    & .menu-items {
+      font-size: 100px;
+      padding-top: 20px;
+
+      & .btn-read-more,
+      .btn-read-more-1,
+      .btn-read-more-2,
+      .btn-read-more-3,
+      .btn-read-more-4,
+      .btn-read-more-5,
+      .btn-read-more-6,
+      .btn-read-more-7,
+      .btn-read-more-8,
+      .btn-read-more-9,
+      .btn-read-more-10 {
+        background-color: rgb(113, 109, 109);
+        border-radius: 100px;
+        box-shadow: rgba(212, 213, 212, 0.2) 0 -25px 18px -14px inset,
+          rgba(149, 149, 149, 0.15) 0 1px 2px,
+          rgba(149, 149, 149, 0.15) 0 2px 4px,
+          rgba(149, 149, 149, 0.15) 0 4px 8px,
+          rgba(149, 149, 149, 0.15) 0 8px 16px,
+          rgba(243, 10, 10, 0.15) 0 16px 32px;
+        color: white;
+        cursor: pointer;
+        padding: 7px 20px;
+        transition: all 300ms;
+        border: 0;
+        font-size: 16px;
+      }
+
+      & .btn-read-more:hover,
+      .btn-read-more-1:hover,
+      .btn-read-more-2:hover,
+      .btn-read-more-3:hover,
+      .btn-read-more-4:hover,
+      .btn-read-more-5:hover,
+      .btn-read-more-6:hover,
+      .btn-read-more-7:hover,
+      .btn-read-more-8:hover,
+      .btn-read-more-9:hover,
+      .btn-read-more-10:hover {
+        box-shadow: rgba(212, 213, 212, 0.2) 0 -25px 18px -14px inset,
+          rgba(181, 181, 181, 0.15) 0 1px 2px,
+          rgba(181, 181, 181, 0.15) 0 2px 4px,
+          rgba(181, 181, 181, 0.15) 0 4px 8px,
+          rgba(181, 181, 181, 0.15) 0 8px 16px,
+          rgba(243, 10, 10, 0.15) 0 16px 32px;
+        transform: scale(1.1) rotate(-3deg);
+      }
+    }
+  }
+
+  & .middle-content-img {
+    padding: 20px;
+    margin-top: 50px;
+    position: relative;
+
+    & .middle-content-text {
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      color: transparent;
+      top: 20px;
+      width: 360px;
+      height: 100%;
+      & a {
+        color: transparent;
+      }
+      /* HOVER PÅ BILDERNA MED TEXT--------- */
+      &:hover .middle-content-all-text {
+        font-weight: 100;
+        color: rgb(224, 215, 215);
+        font-size: 19px;
+        transition: 0.25s;
+
+        & a {
+          color: rgb(224, 215, 215);
+          transition: 0.25s;
+        }
+      }
+    }
+
+    & img {
+      box-shadow: 0 0 10px rgba(86, 74, 74, 0.5);
+      height: 38vh;
+      width: 30vh;
+      object-fit: cover;
+    }
+
+    &:hover img {
+      transition: 0.5s;
+      filter: brightness(65%);
+    }
+  }
+}
+/* ------------------------------------------- */
+/* PRODUKT INFO CONTENT */
+.middle-section-inbetween {
+  flex-direction: column;
+  align-items: center;
+}
+/* ------------------------------------------- */
+/* PRODUKT INFO DETAIL PAGE CONTENT --------------  */
+.middle-section-inbetween {
+  flex-direction: column;
+  align-items: center;
+}
+.middle-content-detail {
+  display: flex;
+  gap: 60px;
+  padding-top: 100px;
+  & .nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 33.33%;
+
+    & .menu-items {
+      font-size: 100px;
+      padding-top: 20px;
+    }
+
+    & img {
+      box-shadow: 0 0 10px rgba(86, 74, 74, 0.5);
+      height: 38vh;
+      width: 30vh;
+      object-fit: cover;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+
+/* ------------------------------------------- */
+/* RETUR  --------------------- */
+
+.container-image {
+  width: 1800px;
+  height: 100%;
+  & .input-file {
+    display: flex;
+    gap: 20px;
+    color: transparent;
+  }
+  & form {
+    opacity: 90%;
+    width: 600px;
+    height: 50px;
+    position: absolute;
+    transform: translate(90%, -2000%);
+    font-size: 20px;
+    color: white;
+  }
+  & form > input {
+    margin: 10px;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  & img {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(11, 10, 10, 0.5);
+    margin-right: 70px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* ------------------------------------------- */
+/* OM OSS page ---------*/
+.middle-section-about {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-wrapper-about {
+  display: flex;
+  flex-direction: row;
+
+  & .about-us-text {
+    & p {
+      padding-left: 20px;
+      margin: 0;
+      font-size: 25px;
+
+      & a {
+        color: rgb(116, 116, 116);
+        text-decoration: none;
+        font-size: 25px;
+      }
+    }
+  }
+
+  & img {
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(86, 74, 74, 0.5);
+    border-radius: 10px;
+    height: 25vh;
+    width: 25vh;
+    object-fit: cover;
+
+    &:hover {
+      box-shadow: 0 0 10px rgba(86, 74, 74, 0.5);
+      transition: all 0.5s;
+      transform: scale(1.1);
+    }
+  }
+}
+/* ------------------------------------------- */
+/* OM Oss PAGE TOP --------------- */
+.main-about-us {
+  width: 100%;
+}
+
+/* ------------------------------------------- */
+/* OM Oss PAGE TOP --------------- */
+.middle-about-img {
+  display: flex;
+
+  & img {
+    margin-right: 50px;
+    border-radius: 10px;
+    height: 70vh;
+    width: 100%;
+  }
+}
+
+.middle-section-about-text {
+  font-size: 25px;
+
+  & em,
+  h2 {
+    font-size: 130px;
+    margin: 0;
+    font-style: italic;
+  }
+
+  & h3 {
+    font-size: 30px;
+  }
+
+  & p {
+    color: rgb(116, 116, 116);
+    font-style: italic;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+}
+
+/* ------------------------------------------- */
+/* FORM OM OSS PAGE --------*/
+.container-image-about-1 {
+  display: flex;
+  justify-content: center;
+}
+.container-image-about {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height: 300px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(86, 74, 74, 0.5);
+  background: linear-gradient(
+    90deg,
+    rgba(83, 83, 83, 0.5) 0%,
+    rgba(179, 179, 179, 0.5) 25%,
+    rgba(222, 217, 217, 0.966) 50%,
+    rgba(174, 173, 173, 0.5) 75%,
+    rgba(82, 82, 82, 0.5) 100%
+  );
+  opacity: 50%;
+  color: black;
+}
+
+/* ------------------------------------------- */
+
+/* AFTER HIDE FORM --------*/
+
+.form-container-about {
+  width: 300px;
+  height: 200px;
+  box-shadow: 0 0 50px rgba(96, 96, 96, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 35px;
+
+  & p {
+    font-size: 20px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+  &:hover {
+    opacity: 75%;
+    background-color: whitesmoke;
+    box-shadow: 0 0 50px rgba(96, 96, 96, 0.5);
+    transition: all 0.5s;
+    transform: scale(1.3);
+  }
+  & form > input.submit {
+    width: 180px;
+    margin-left: 50px;
+  }
+
+  & form > input#tel {
+    width: 180px;
+    margin-left: 20px;
+  }
+  & form > input#epost {
+    width: 175px;
+    margin-left: 6px;
+  }
+  & form > input#eNamn {
+    width: 180px;
+    margin-left: 5px;
+  }
+}
+
+.after-hide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0%, -150%);
+
+  & h3 {
+    opacity: 75%;
+    font-size: 100px;
+    color: rgb(94, 93, 93);
+  }
+}

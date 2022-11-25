@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produkt detail</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header container för nav-baren -->
+      <header>
+        <nav class="header-navbar">
+          <ul class="header-navbar-list">
+            <li><a href="home.html">Hem</a></li>
+            <li><a href="alla-produkter.html">Alla produkter</a></li>
+            <div class="active-navbar">
+              <li><a href="produkt-detail.html">Produkt info</a></li>
+            </div>
+            <li><a href="retur.html">Retur</a></li>
+            <li><a href="om-oss.html">Om oss</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-container">
+        <!-- Produkt info -->
+        <section>
+          <div class="middle-section-top">
+            <div class="middle-section-top-text">
+              <h2>Nike Air Jordan 1</h2>
+              <br /><em
+                >Blivit extremt populära för vardaglig samt fin klädsel.<br />
+                Men är i grund och botten en träningssko för inomhus bruk.</em
+              >
+              <br /><em>Multisko som kan användas till det mesta.</em>
+              <br />
+              <br />
+              <p>Pris: 3899:-</p>
+              <br />
+              <nav class="middle-section-produktinfo">
+                <div class="middle-section-produktinfo-top">
+                  <div class="produkt-info">
+                    <p>Produktinformation</p>
+                    <button class="btn-read-more-produktinfo">+</button>
+                  </div>
+                  <ul hidden class="produkt-info-hide">
+                    <li>
+                      <p><em>Material:</em> Läder, Textil, Gummi</p>
+                    </li>
+                    <li>
+                      <p><em>Färg:</em> Svart, Röd, Vit</p>
+                    </li>
+                    <li>
+                      <p><em>Storlek:</em> 36-46</p>
+                    </li>
+                    <li>
+                      <p><em>Passform:</em> Normal</p>
+                    </li>
+                    <li>
+                      <p><em>Skons innersula:</em> Textil</p>
+                    </li>
+                    <li>
+                      <p><em>Skons yttersula:</em> Gummi</p>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </section>
+        <!-- Mindre bilder. -->
+        <section class="middle-section-inbetween">
+          <div class="middle-content-detail">
+            <!-- Bild Nr:1 -->
+            <nav class="nav-wrapper">
+              <div class="middle-content-img">
+                <img
+                  src="./nike-jordan/klim-musalimov-CMGKxMmZcRk-unsplash.jpg"
+                  alt="Shoes"
+                />
+              </div>
+            </nav>
+            <!-- Bild Nr:2 -->
+            <nav class="nav-wrapper">
+              <div class="middle-content-img">
+                <img
+                  src="./nike-jordan/ryan-plomp-76w_eDO1u1E-unsplash.jpg"
+                  alt="Shoes"
+                />
+                <div class="middle-content-text">
+                  <div class="middle-content-all-text"></div>
+                </div>
+              </div>
+            </nav>
+            <!-- Bild Nr:3 -->
+            <nav class="nav-wrapper">
+              <div class="middle-content-img">
+                <img
+                  src="./nike-jordan/klim-musalimov-9VtyP5XB6FA-unsplash.jpg"
+                  alt="Shoes"
+                />
+                <div class="middle-content-text">
+                  <div class="middle-content-all-text"></div>
+                </div>
+              </div>
+            </nav>
+            <!-- Bild Nr:4 -->
+            <nav class="nav-wrapper">
+              <div class="middle-content-img">
+                <img
+                  src="./nike-jordan/sahand-babali-U2JtujrbGM8-unsplash.jpg"
+                  alt="Shoes"
+                />
+                <div class="middle-content-text">
+                  <div class="middle-content-all-text"></div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".btn-read-more-produktinfo").click(function () {
+          const info = $(".produkt-info-hide").css("display");
+
+          console.log("DISPLAY", info);
+          if (info === "block") {
+            $(this).text("+");
+          } else {
+            $(this).text("-");
+          }
+
+          $(".produkt-info-hide").toggle();
+        });
+      });
+    </script>
+  </body>
+</html>

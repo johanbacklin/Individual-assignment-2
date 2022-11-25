@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Om oss Sida</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header container för nav-baren -->
+      <header>
+        <nav class="header-navbar">
+          <ul class="header-navbar-list">
+            <li><a href="home.html">Hem</a></li>
+            <li><a href="alla-produkter.html">Alla produkter</a></li>
+            <li><a href="produkt-detail.html">Produkt info</a></li>
+            <li><a href="retur.html">Retur</a></li>
+            <div class="active-navbar">
+              <li><a href="om-oss.html">Om oss</a></li>
+            </div>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-about-us">
+        <section>
+          <div class="middle-section-about">
+            <div class="middle-section-about-text">
+              <em><h2>Nike Sneakerstore</h2></em>
+              <p>
+                Nike är idag marknadsledare inom sportutrustningsindustrin och
+                har en dominerande ställning på flera marknader, inte minst på
+                hemmamarknaden i USA.
+              </p>
+              <h3>Info Om Teamet</h3>
+              <p>
+                Vårt team består av 4 personer som alla har olika roller. Vi
+                alla har alltid med oss att....
+                <br />
+                If everyone is moving forward together, then success takes care
+                of itself.
+              </p>
+              <h3>CEO Nike Sneakers</h3>
+              <p>
+                The world will shape you if you let it. To live the life you
+                desire, you must make conscious choices. Johan Backlin, CEO,
+                Nike, Sneakers
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <nav class="nav-wrapper-about">
+            <div class="middle-content-img">
+              <img
+                src="./images-nike-shoes/foto-sushi-6anudmpILw4-unsplash.jpg"
+                alt="VD"
+              />
+            </div>
+            <div class="about-us-text">
+              <em><p>VD</p></em>
+              <p><a href="tel:0721790294">0721790294</a></p>
+              <p>
+                <a href="mailto:email@johanVD.com">nike.sneakers@johanVD.com</a>
+              </p>
+            </div>
+          </nav>
+        </section>
+
+        <section>
+          <div class="middle-about-img">
+            <img
+              src="./test-employee/icons8-team-yTwXpLO5HAA-unsplash.jpg"
+              alt="Sneakerstore"
+            />
+          </div>
+        </section>
+        <section>
+          <!-- Input texten -->
+          <div class="after-hide"></div>
+          <!-- Form -->
+          <div class="container-image-about-1">
+            <div class="container-image-about">
+              <div class="form-container-about">
+                <form action="table-book">
+                  <label for="eNamn">Namn: </label>
+                  <input
+                    type="text"
+                    id="eNamn"
+                    name="eNamn"
+                    placeholder="Birgitta Rönnings"
+                  /><br />
+                  <br />
+                  <label for="datum">Epost: </label>
+                  <input
+                    type="epost"
+                    id="epost"
+                    name="epost"
+                    placeholder="exempel@gmail.com"
+                  /><br /><br />
+                  <label for="tel">Tel: </label>
+                  <input
+                    type="text"
+                    id="tel"
+                    name="tel"
+                    placeholder="+46701234567"
+                  /><br /><br />
+                  <input class="submit" type="button" value="Skicka formulär" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".submit").click(function () {
+          $(".container-image-about-1").hide();
+          $(".after-hide").append(
+            "<h3>Tack för ditt meddelande. Vi återkopplar så fort vi kan!</h3>"
+          );
+
+          hide = setTimeout(function () {
+            $(".after-hide").fadeOut();
+          }, 2000);
+        });
+      });
+    </script>
+  </body>
+</html>

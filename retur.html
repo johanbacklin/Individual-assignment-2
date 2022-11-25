@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retur Sida</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="header-navbar">
+          <ul class="header-navbar-list">
+            <li><a href="home.html">Hem</a></li>
+            <li><a href="alla-produkter.html">Alla produkter</a></li>
+            <li><a href="produkt-detail.html">Produkt info</a></li>
+            <div class="active-navbar">
+              <li><a href="retur.html">Retur</a></li>
+            </div>
+            <li><a href="om-oss.html">Om oss</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container-image">
+        <img
+          src="/images-nike-shoes/craig-lovelidge-74KgyRNsfvI-unsplash.jpg"
+          alt="BILD"
+        />
+        <!-- Form retur -->
+        <form action="table-book">
+          <label for="eNamn">Namn:</label><br />
+          <input type="text" id="eNamn" name="eNamn" placeholder="Namn" /><br />
+          <label for="datum">Epost</label><br />
+          <input
+            type="epost"
+            id="epost"
+            name="epost"
+            placeholder="exempel@gmail.com"
+          /><br /><br />
+          <label for="kort-b">Kort beskrivning av vad problemen har varit</label
+          ><br />
+          <input
+            type="text"
+            id="kort-b"
+            name="kort-b"
+            placeholder="Ex: Skada på skorna"
+          /><br /><br />
+          <label for="adress">Adress</label><br />
+          <input
+            type="text"
+            id="adress"
+            name="adress"
+            placeholder="Köttbullevägen 10"
+          /><br /><br />
+          <label for="bild-produkt"
+            >Bild på produkten som du vill lämna tillbaka, om det var någon
+            skada eller liknande.</label
+          ><br />
+          <!-- Input File -->
+          <div class="input-file">
+            <input type="file" id="file" name="file" placeholder="file" />
+            <input type="file" />
+            <input type="file" />
+            <input type="file" />
+          </div>
+          <br /><br />
+          <!-- Select Shoes -->
+          <div class="dropdown">
+            <label for="shoes"
+              >Vilken typ av modell som du vill lämna tillbaka.</label
+            ><br />
+            <select class="select-shoe" name="shoes" id="shoes">
+              <option value="shoes">Välj modell</option>
+              <option value="Nike3">Nike Jordan 1 - Svart & Röd</option>
+              <option value="Nike2">Nike Air Force 1 - Gul</option>
+              <option value="Nike1">Nike Running 1 - Grön</option>
+              <option value="Nike3">Nike Jordan 1 - Vintage</option>
+              <option value="Nike2">Nike Air Force 1, Lila</option>
+              <option value="Nike1">Nike Air Max 90 - Blå</option>
+              <option value="Nike3">Nike Metcon</option>
+              <option value="Nike2">Nike Air Running 1 - Grön</option>
+              <option value="Nike1">Nike Street2K</option>
+              <option value="Nike1">Nike Air Force 1 - Orange</option>
+            </select>
+          </div>
+          <br /><br />
+          <input type="button" value="Skicka retur" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
